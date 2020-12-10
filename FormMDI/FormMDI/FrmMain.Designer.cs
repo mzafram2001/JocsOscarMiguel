@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.mnuMain = new System.Windows.Forms.MenuStrip();
-            this.pedraPaperTisoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sortirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pedraPaperTisoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.elPenjatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pedraPaperTisoraToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.pedraPaperTisoraToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.finestresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horitzontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,8 +53,23 @@
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.MdiWindowListItem = this.finestresToolStripMenuItem;
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(900, 28);
+            this.mnuMain.Size = new System.Drawing.Size(900, 24);
             this.mnuMain.TabIndex = 1;
+            // 
+            // generalToolStripMenuItem
+            // 
+            this.generalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sortirToolStripMenuItem});
+            this.generalToolStripMenuItem.Name = "generalToolStripMenuItem";
+            this.generalToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.generalToolStripMenuItem.Text = "&General";
+            // 
+            // sortirToolStripMenuItem
+            // 
+            this.sortirToolStripMenuItem.Name = "sortirToolStripMenuItem";
+            this.sortirToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
+            this.sortirToolStripMenuItem.Text = "&Sortir";
+            this.sortirToolStripMenuItem.Click += new System.EventHandler(this.sortirToolStripMenuItem_Click);
             // 
             // pedraPaperTisoraToolStripMenuItem
             // 
@@ -63,42 +78,27 @@
             this.toolStripSeparator1,
             this.pedraPaperTisoraToolStripMenuItem1});
             this.pedraPaperTisoraToolStripMenuItem.Name = "pedraPaperTisoraToolStripMenuItem";
-            this.pedraPaperTisoraToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
+            this.pedraPaperTisoraToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.pedraPaperTisoraToolStripMenuItem.Text = "&Jocs";
-            // 
-            // generalToolStripMenuItem
-            // 
-            this.generalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sortirToolStripMenuItem});
-            this.generalToolStripMenuItem.Name = "generalToolStripMenuItem";
-            this.generalToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
-            this.generalToolStripMenuItem.Text = "&General";
-            // 
-            // sortirToolStripMenuItem
-            // 
-            this.sortirToolStripMenuItem.Name = "sortirToolStripMenuItem";
-            this.sortirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.sortirToolStripMenuItem.Text = "&Sortir";
-            this.sortirToolStripMenuItem.Click += new System.EventHandler(this.sortirToolStripMenuItem_Click);
             // 
             // elPenjatToolStripMenuItem
             // 
             this.elPenjatToolStripMenuItem.Name = "elPenjatToolStripMenuItem";
-            this.elPenjatToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.elPenjatToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.elPenjatToolStripMenuItem.Text = "El Pen&jat";
             this.elPenjatToolStripMenuItem.Click += new System.EventHandler(this.elPenjatToolStripMenuItem_Click);
-            // 
-            // pedraPaperTisoraToolStripMenuItem1
-            // 
-            this.pedraPaperTisoraToolStripMenuItem1.Name = "pedraPaperTisoraToolStripMenuItem1";
-            this.pedraPaperTisoraToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.pedraPaperTisoraToolStripMenuItem1.Text = "&Pedra-Paper-Tisora";
-            this.pedraPaperTisoraToolStripMenuItem1.Click += new System.EventHandler(this.pedraPaperTisoraToolStripMenuItem1_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(172, 6);
+            // 
+            // pedraPaperTisoraToolStripMenuItem1
+            // 
+            this.pedraPaperTisoraToolStripMenuItem1.Name = "pedraPaperTisoraToolStripMenuItem1";
+            this.pedraPaperTisoraToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
+            this.pedraPaperTisoraToolStripMenuItem1.Text = "&Pedra-Paper-Tisora";
+            this.pedraPaperTisoraToolStripMenuItem1.Click += new System.EventHandler(this.pedraPaperTisoraToolStripMenuItem1_Click);
             // 
             // finestresToolStripMenuItem
             // 
@@ -108,40 +108,40 @@
             this.cascadaToolStripMenuItem,
             this.organitzarToolStripMenuItem});
             this.finestresToolStripMenuItem.Name = "finestresToolStripMenuItem";
-            this.finestresToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
+            this.finestresToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.finestresToolStripMenuItem.Text = "&Finestres";
             // 
             // horitzontalToolStripMenuItem
             // 
             this.horitzontalToolStripMenuItem.Name = "horitzontalToolStripMenuItem";
-            this.horitzontalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.horitzontalToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.horitzontalToolStripMenuItem.Text = "&Horitzontal";
             this.horitzontalToolStripMenuItem.Click += new System.EventHandler(this.horitzontalToolStripMenuItem_Click);
             // 
             // verticalToolStripMenuItem
             // 
             this.verticalToolStripMenuItem.Name = "verticalToolStripMenuItem";
-            this.verticalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.verticalToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.verticalToolStripMenuItem.Text = "&Vertical";
             this.verticalToolStripMenuItem.Click += new System.EventHandler(this.verticalToolStripMenuItem_Click);
             // 
             // cascadaToolStripMenuItem
             // 
             this.cascadaToolStripMenuItem.Name = "cascadaToolStripMenuItem";
-            this.cascadaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.cascadaToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.cascadaToolStripMenuItem.Text = "&Cascada";
             this.cascadaToolStripMenuItem.Click += new System.EventHandler(this.cascadaToolStripMenuItem_Click);
             // 
             // organitzarToolStripMenuItem
             // 
             this.organitzarToolStripMenuItem.Name = "organitzarToolStripMenuItem";
-            this.organitzarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.organitzarToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.organitzarToolStripMenuItem.Text = "&Organitzar";
             this.organitzarToolStripMenuItem.Click += new System.EventHandler(this.organitzarToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(900, 506);
